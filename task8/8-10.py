@@ -8,4 +8,5 @@
 
 '''
 from itertools import permutations
-print([''.join(i) for i in permutations('алнрсу')][441])
+
+print([i for i in permutations('алнрсу')][441])

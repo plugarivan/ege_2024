@@ -7,7 +7,7 @@ for w in coll:
     word = ''.join(w)
     s = ''
     for i in word:
-        if i in 'оеа': s += 'g'
+        if i in 'а': s += 'g'
         else: s += 's'
     if 'gg' in s or 'ss' in s:
         k.add(word)
