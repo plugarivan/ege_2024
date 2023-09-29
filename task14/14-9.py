@@ -4,11 +4,9 @@
 summ = 0
 for i in range(2,11):
     n = 1988
-    s = ''
     flag = True
     prev = 0
     while n:
-        s = str(n % i) + s
         if (n % i) == prev:
             flag = False
         prev = n % i

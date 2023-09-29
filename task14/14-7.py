@@ -7,6 +7,6 @@ while x:
     s.append(x % 3)
     x //= 3
 maxim = 0
-for i in s:
+for i in range(3):
     maxim = max(s.count(i), maxim)
 print(maxim)
