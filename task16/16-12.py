@@ -14,9 +14,5 @@ def f(n):
         else:
             return f(n - 2) + n - 6
 
-k = 0
-for n in range(1, 1001):
-    x = str(f(n))
-    if len(x) == len([i for i in x if int(i) % 2]):
-        k += 1
-print(k)
+
+print(len([n for n in range(1, 1001) if all(int(i) % 2 for i in str(f(n)))]))
