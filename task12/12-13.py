@@ -20,7 +20,7 @@ for i in range(1, 1000):
     s = i * '1'
     while '1111' in s or '222' in s or '33' in s:
         if '1111' in s:
-            s = s.replace('1111', '3333', 1)
+            s = s.replace('1111', '333', 1)
         elif '222' in s:
             s = s.replace('222', '11', 1)
         else:
