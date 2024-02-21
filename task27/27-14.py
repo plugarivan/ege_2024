@@ -35,9 +35,9 @@ with open('files/14/27-137b.txt') as f:
     for i in range(N):
         x = int(f.readline())
         if len(ocher) >= 15:
-            delayed = ocher.pop(0)
-            r = delayed % 8
-            d3 = divs3(delayed)
+            d = ocher.pop(0)
+            r = d % 8
+            d3 = divs3(d)
             pairs[r][d3] += 1
         r = x % 8
         r2 = 0 if r == 0 else 8 - r
