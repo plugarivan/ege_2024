@@ -6,7 +6,7 @@ from ipaddress import *
 k = 0
 net = ip_network('252.67.33.87/255.252.0.0', 0)
 for ip in net:
-    ipp = bin(int(ip))[2:]
+    ipp = bin(int(ip))[2:].zfill(32)
     if (ipp[:16].count('1') * 2) < ipp[16:].count('1'):
         k += 1
 print(k)

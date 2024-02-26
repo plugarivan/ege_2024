@@ -7,7 +7,7 @@ from ipaddress import *
 k = 0
 net = ip_network(f'211.48.136.64/255.255.255.224', 0)
 for ip in net:
-    ip_bin = bin(int(ip))[2:]
+    ip_bin = bin(int(ip))[2:].zfill(32)
     if ip_bin[-2:] == '11':
         k += 1
 print(k)

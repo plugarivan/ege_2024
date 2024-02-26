@@ -6,6 +6,6 @@ from ipaddress import *
 res = []
 net = ip_network(f'204.252.0.0/255.255.0.0', 0)
 for ip in net:
-    ip_bin = bin(int(ip))[2:]
+    ip_bin = bin(int(ip))[2:].zfill(32)
     res.append(ip_bin.count('1'))
 print(max(res))

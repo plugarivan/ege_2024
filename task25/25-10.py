@@ -3,7 +3,7 @@
 '''
 #2 ** n * p ** 4 - у этого числа ровно 5 нечетных делителей
 def simple(x):
-    return all(x % d != 0 for d in range(2, round(x ** 0.5) + 1))
+    return x > 1 and all(x % d != 0 for d in range(2, round(x ** 0.5) + 1))
 
 
 for n in range(55000000, 60000001):
