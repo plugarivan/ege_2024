@@ -40,6 +40,9 @@ with open('files/6/27-54b.txt') as f:
             #maxim1 - текущее наибольшее, в максим2 - сумма двух, в максим3 - сумма трех и в максим - сумма четырых
             ostat0 = (d + ostat) % 4
             maxim3[ostat0] = max(maxim3[ostat0], maxim2[d] + i)
+        for d in range(4):  # перебираем все остатки от 0 до 4 и заполняем списки самыми большими суммами, то есть в списке
+                # maxim1 - текущее наибольшее, в максим2 - сумма двух, в максим3 - сумма трех и в максим - сумма четырых
+            ostat0 = (d + ostat) % 4
             maxim2[ostat0] = max(maxim2[ostat0], maxim1[d] + i)
         maxim1[ostat] = max(maxim1[ostat], i)
 print(maxim)
